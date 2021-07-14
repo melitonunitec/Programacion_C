@@ -1,22 +1,16 @@
-/*1. Pedir 2 números al usuario y sumarlos, restarlos, multiplicarlos 
-y dividirlos.*/
+/* Problema 1: Comprobar a traves de un programa si un alumno aprobo o no
+un examen (Aprueba si su nota es mayor a 10.5)*/
+
 #include<stdio.h>
 
 int main(){
-	int n1,n2,suma=0,resta=0,mult=0,div=0;
+	float examen; 
 	
-	printf("Digite 2 numeros: ");
-	scanf("%i %i",&n1,&n2);
+	printf("Digite la nota del examen: "); scanf("%f",&examen);
 	
-	suma = n1 + n2;
-	resta = n1 - n2;
-	mult = n1 * n2;
-	div = n1/n2;
+	if(examen > 10.5){
+		puts("El alumno esta aprobado!!!");
+	}
 	
-	printf("\nLa suma es: %i",suma);
-	printf("\nLa resta es: %i",resta);
-	printf("\nLa mult es: %i",mult);
-	printf("\nLa div es: %i",div);
-	 
 	return 0;
 }
